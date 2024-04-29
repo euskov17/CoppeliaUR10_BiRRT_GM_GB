@@ -1,0 +1,15 @@
+cbor==1.0.0
+cbor2==5.6.3
+coppeliasim_zmqremoteapi_client==2.0.4
+eigen==0.0.1
+lark==1.1.9
+matplotlib==3.7.2
+msgpack_python==0.5.6
+numpy==1.24.3
+Pillow==10.1.0
+Pillow==10.3.0
+pyzmq==23.2.0
+six==1.16.0
+skimage==0.0
+tensorflow==2.15.0.post1
+tqdm==4.65.0
