@@ -28,4 +28,5 @@ Before running example run `./coppeliaSim` and load scene in application `file->
 
 Using for experiments scene is located in [scenes/ur10_scene.ttt](./scenes/ur10_scene.ttt)
 
-<!-- # Content -->
+![alt text](images/scene.png "Title")
+

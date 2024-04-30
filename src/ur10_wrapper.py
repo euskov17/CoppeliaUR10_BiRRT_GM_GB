@@ -1,8 +1,10 @@
-from coppeliasim_zmqremoteapi_client import RemoteAPIClient
 import numpy as np
 import math
 
-class UR10:
+from .rrt_versions.environment import Environment
+from coppeliasim_zmqremoteapi_client import RemoteAPIClient
+
+class UR10(Environment):
     def __init__(self, world):
         self.client = RemoteAPIClient()
         self.sim = self.client.require('sim')
