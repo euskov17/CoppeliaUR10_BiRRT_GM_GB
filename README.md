@@ -30,3 +30,9 @@ Using for experiments scene is located in [scenes/ur10_scene.ttt](./scenes/ur10_
 
 ![alt text](images/scene.png "Title")
 
+# Visualisation examples
+!["Visualisation of path made by BiRRT with uniform sampler"](videos/uniform.mp4)
+
+!["Visualisation of path made by BiRRT with GM sampler"](videos/uniform.mp4)
+
+!["Visualisation of path made by BiRRT with GM sampler with goal bias"](videos/uniform.mp4)
