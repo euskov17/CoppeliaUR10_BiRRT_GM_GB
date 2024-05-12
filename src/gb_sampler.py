@@ -1,5 +1,5 @@
-from rrt_versions.sampler import Sampler
-from rrt_versions.environment import Environment
+from .rrt_versions.sampler import Sampler
+from .rrt_versions.environment import Environment
 from sklearn.mixture import GaussianMixture
 
 import numpy as np
@@ -22,7 +22,7 @@ class GB_GM_Sampler(Sampler):
     def __init__(self, gm: GaussianMixture, env: Environment):
         self.gm = gm
         self.gm_weights = gm.weights_
-        self.positions = get_means_positions(self.gm.means_)
+        self.positions = get_means_positions(self.gm.means_, env)
         self.env = env
 
     def sample(self):

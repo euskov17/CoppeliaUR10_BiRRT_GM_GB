@@ -51,13 +51,12 @@ class UR10(Environment):
         return self.target_position
     
     def set_target_position(self, position):
-        cube = self.ur10.sim.getObject('/Cuboid')
-        self.ur10.sim.setObjectPosition(cube, list(position))
+        cube = self.sim.getObject('/Cuboid')
+        self.sim.setObjectPosition(cube, list(position))
         return self.target_position
     
-    
     def get_end_pos(self):
-        return self.ur10.sim.getObjectPosition(self.end_effector)
+        return self.sim.getObjectPosition(self.end_effector)
     
     def dist_to_goal(self):
         end_position = np.array(self.sim.getObjectPosition(self.end_effector))

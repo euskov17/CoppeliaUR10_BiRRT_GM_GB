@@ -2,7 +2,7 @@ from tqdm import tqdm
 from .rrt_versions.environment import Environment
 from .tests_maker import DEFAULT_START
 from .rrt_versions.bi_rrt import BiRRT
-from .rrt_versions.rrt import RRTConnect
+from .rrt_versions.rrt import RRT
 from .rrt_versions.rrt_connect import RRTConnect
 from .ur10_wrapper import UR10
 from .tests_maker import generate_tests
@@ -31,6 +31,8 @@ def collect_data(env: UR10, start_state=DEFAULT_START, algo=BiRRT, num_runs=100,
     
     return data
 
+def load_collected_data(filename):
+    return np.loadtxt(filename)
 
 def sampler_fit(datafile: str = "../collected_data/fixed_start_ur10_100_runs", n_components=300):
     data = np.loadtxt(datafile)

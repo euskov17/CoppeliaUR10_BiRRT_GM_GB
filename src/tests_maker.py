@@ -1,5 +1,5 @@
 import numpy as np
-from rrt_versions.environment import Environment
+from .rrt_versions.environment import Environment
 
 DEFAULT_START = np.array([ 1.00812511, 
                           -0.94309862, 
