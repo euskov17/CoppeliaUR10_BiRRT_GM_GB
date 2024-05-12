@@ -26,9 +26,10 @@ Example of running Bi-RRT algorithm is presented in [example.ipynb](./example.ip
 
 Before running example run `./coppeliaSim` and load scene in application `file->load_scene`.
 
-Using for experiments scene is located in [scenes/ur10_scene.ttt](./scenes/ur10_scene.ttt)
+Using for experiments scene is located in [scenes/ur10_scene_red.ttt](./scenes/ur10_scene.ttt)
 
 ![alt text](images/scene.png "Title")
+
 
 # Visualisation examples
 !["Visualisation of path made by BiRRT with uniform sampler"](videos/uniform.mp4)
