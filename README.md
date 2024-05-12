@@ -37,3 +37,5 @@ Using for experiments scene is located in [scenes/ur10_scene_red.ttt](./scenes/u
 !["Visualisation of path made by BiRRT with GM sampler"](videos/uniform.mp4)
 
 !["Visualisation of path made by BiRRT with GM sampler with goal bias"](videos/uniform.mp4)
+
+<video width="630" height="300" src="videos/2024-05-12_22-53-17.mp4.mp4"></video>
