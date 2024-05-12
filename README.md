@@ -48,6 +48,18 @@ Using for experiments scene is located in [scenes/ur10_scene_red.ttt](./scenes/u
   <source src="videos/gm_sampler.mp4" type="video/mp4">
 </video>
 
+https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/assets/80920825/4e25c463-b8ea-4083-b3ef-9e867c271ccf
+
+
+
+https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/assets/80920825/adc8e51e-be34-459e-a860-9bfbea7fd448
+
+
+
+https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/assets/80920825/a6746407-a229-4567-a1f7-f3ccab69801c
+
+
+
 
 <video width="320" height="240" controls>
   <source src="videos/gm_gb_sampler.mp4" type="video/mp4">
