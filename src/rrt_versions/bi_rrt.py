@@ -1,5 +1,5 @@
 from .environment import Environment
-from .sample_based_basics import Node, Tree
+from .tree_basics import Node, Tree
 from tqdm import tqdm
 
 import numpy as np
@@ -20,7 +20,7 @@ def make_bipath(last_node1, last_node2):
 
 
 def BiRRT(env: Environment, max_iters=3000, goal_gens=10, 
-          near_radius=2, verbose=False, time_limit=40,
+          near_radius=2, verbose=False, time_limit=90,
           sampler=None):
     start_time = time.time()
     

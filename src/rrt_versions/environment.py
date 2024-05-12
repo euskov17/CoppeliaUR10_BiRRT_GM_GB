@@ -7,11 +7,19 @@ class Environment(ABC):
         pass
     
     @abstractmethod
-    def get_target(self):
+    def get_target_position(self):
+        pass
+
+    @abstractmethod
+    def set_target_position(self, position):
         pass
     
     @abstractmethod
     def dist_to_goal(self):
+        pass
+
+    @abstractmethod
+    def get_end_pos(self):
         pass
 
     @abstractmethod

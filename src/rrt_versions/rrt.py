@@ -5,7 +5,7 @@ import random
 import time
 
 from .environment import Environment
-from .sample_based_basics import Node, Tree
+from .tree_basics import Node, Tree
 
 def make_path(last_node: Node):
     path = []
@@ -15,9 +15,10 @@ def make_path(last_node: Node):
     return path[::-1]
 
 
-def RRTConnect(env: Environment, max_iters=3000, 
+def RRT(env: Environment, max_iters=3000, 
                goal_bias_prob=.1, goal_gens=10, treshold=.1,
-               verbose=False, sampler=None):
+               verbose=False, sampler=None, time_limit=90):
+    start_time = time.time()
     start_node = Node(np.array(env.get_state()))
     tree = Tree([start_node])
     
@@ -55,5 +56,8 @@ def RRTConnect(env: Environment, max_iters=3000,
 
         if env.dist_to_goal() < treshold:
             return True, iter + 1, num_steps, make_path(new_node)
-    
+
+        if time.time() - start_time > time_limit:
+            return False, iter + 1, num_steps, None
+
     return False, max_iters, num_steps, None

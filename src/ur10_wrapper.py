@@ -14,7 +14,6 @@ class UR10(Environment):
         self.world = self.sim.createCollection(0)
         for object in world:
             item = self.sim.getObject('/' + object)
-            # print(item, object)
             self.sim.addItemToCollection(self.world, self.sim.handle_tree, item, 0)
 
         self.ur10 = self.sim.createCollection(0)
@@ -48,8 +47,17 @@ class UR10(Environment):
     def update_target(self):
         self.target_position = self.sim.getObjectPosition(self.target)
     
-    def get_target(self):
+    def get_target_position(self):
         return self.target_position
+    
+    def set_target_position(self, position):
+        cube = self.ur10.sim.getObject('/Cuboid')
+        self.ur10.sim.setObjectPosition(cube, list(position))
+        return self.target_position
+    
+    
+    def get_end_pos(self):
+        return self.ur10.sim.getObjectPosition(self.end_effector)
     
     def dist_to_goal(self):
         end_position = np.array(self.sim.getObjectPosition(self.end_effector))
@@ -92,20 +100,6 @@ class UR10(Environment):
         prev = np.array(self.get_state())
         diff = new_state - prev
         norm = np.linalg.norm(diff, 1)
-
-        # if norm <= self.delta:
-        #     self.set_state(new_state)
-        #     if self.has_collision():
-        #         return False, 0, prev, []
-        #     return True, 1, new_state, [new_state]
-        
-        # diff /= norm * self.delta
-
-        # new_state = prev + diff
-        # self.set_state(new_state)
-        # if self.has_collision():
-        #     return False, 0, prev, []
-        # return False, 1, new_state, [new_state]
 
         steps = math.ceil(norm / self.delta)
 

@@ -5,7 +5,7 @@ import random
 import time
 
 from .environment import Environment
-from .sample_based_basics import Node, Tree
+from .tree_basics import Node, Tree
 
 def make_path(last_node: Node):
     path = []
