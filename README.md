@@ -32,10 +32,13 @@ Using for experiments scene is located in [scenes/ur10_scene_red.ttt](./scenes/u
 
 
 # Visualisation examples
-!["Visualisation of path made by BiRRT with uniform sampler"](videos/uniform.mp4)
+!["Visualisation of path made by BiRRT with uniform sampler"](https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/videos/uniform.mp4)
 
-!["Visualisation of path made by BiRRT with GM sampler"](videos/uniform.mp4)
+!["Visualisation of path made by BiRRT with GM sampler"](https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/videos/uniform.mp4)
 
-!["Visualisation of path made by BiRRT with GM sampler with goal bias"](videos/uniform.mp4)
+!["Visualisation of path made by BiRRT with GM sampler with goal bias"](https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/videos/uniform.mp4)
 
-<video width="630" height="300" src="videos/2024-05-12_22-53-17.mp4.mp4"></video>
+<video width="630" height="300" src="https://github.com/euskov17/CoppeliaUR10_BiRRT_GM_GB/videos/2024-05-12_22-53-17.mp4.mp4"></video>
+
+
+
